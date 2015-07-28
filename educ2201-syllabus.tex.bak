@@ -249,7 +249,7 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
 
 \begin{marginfigure}% 
 	\begin{center}
-  \includegraphics[width=1\linewidth]{frazz-mistakes.png}
+  \includegraphics[width=0.5\linewidth]{dilbert-plan.png}
 %  \caption{Charlie Brown reflecting on Learning Performances}
   \label{fig:sc-pic}
 	\end{center}
@@ -339,7 +339,7 @@ I spend a great deal of time and effort reviewing your work and providing feedba
 \part{Performances of Understanding}
 \begin{marginfigure}% 
 	\begin{center}
-  \includegraphics[width=1\linewidth]{frazz-homework.png}
+  \includegraphics[width=0.5\linewidth]{lp-pic.png}
   \label{fig:lp-pic}
 	\end{center}
 \end{marginfigure}
@@ -464,7 +464,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \begin{marginfigure}% 
 	\begin{center}
-  \includegraphics[width=0.45\linewidth]{frazz-time.png}
+  \includegraphics[width=0.5\linewidth]{dilbert-time.png}
 %  \caption{Charlie Brown reflecting on Learning Performances}
   \label{fig:sc-pic}
 	\end{center}
@@ -500,10 +500,10 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \section{Unit 0: Getting Situated and Started}
 
-\subsection{Week of \weekone}
+\subsection{Week of}
 
 \begin{specweek}
-\laborday
+Martin Luther King, Jr. Day on Monday, January 19 (no class)
 \end{specweek}
 
 \begin{tabsched}
@@ -522,7 +522,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \section{Unit 1: Communicating the Role of Technology in Education}
 
-\subsection{Week of \weektwo}
+\subsection{Week of January 26-30}
 
 \begin{tabsched}
 	\tabpq & According to Grant Wiggins, what are the differences between an \emph{argument} and a persuasive essay? \\
@@ -539,7 +539,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabperformance & Syllabus "Quiz" Due Monday, January 26 \\
 \end{tabsched}
 
-\subsection{Week of \weekthree}
+\subsection{Week of February 2-6}
 
 \begin{tabsched}
 	\tabpq & According to Tom Whitby, what are the differences between \textit{then} and \textit{now}? \\
@@ -553,7 +553,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \section{Unit 2: Creating an Online Book for All Learners}
 
-\subsection{Week of \weekfour}
+\subsection{Week of February 9-13}
 
 \begin{tabsched}
 	\tabpq & What is the ultimate goal of Universal Design for Learning? \\
@@ -571,7 +571,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabperformance & Feedback from Writing Center Completed by Friday, February 13 \\
 \end{tabsched}
 \newpage
-\subsection{Week of \weekfive}
+\subsection{Week of February 16-20}
 
 \begin{specweek}Interview Students Monday, February 16\end{specweek}
 
@@ -590,7 +590,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabperformance & Written Argument Due by Friday, February 20 \\
 \end{tabsched}
 
-\subsection{Week of \weeksix}
+\subsection{Week of February 23-27}
 
 \begin{tabsched}
 	\tabpq & What are the four Reciprocal Teaching Strategies? \\
@@ -605,7 +605,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \end{tabsched}
 
-\subsection{Week of \weekseven}
+\subsection{Week of March 2-6}
 
 \begin{tabsched}
 	\tabpq & According to the authors, what are the benefits of students becoming digital authors? \\
@@ -619,7 +619,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \section{Unit 3: Exploring the Many Sides of Diversity}
 
-\subsection{Week of \weekeight}
+\subsection{Week of March 9-13}
 
 \begin{tabsched}
 	\tabpq & What is a WebQuest? \\
@@ -636,13 +636,13 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabperformance & UDL Book Major Performance Due by Friday, March 13 \\
 \end{tabsched}
 
-\subsection{Week of \weeknine}
+\subsection{Week of March 16-20}
 
 \begin{center}
 	\textbf{* Special Week: Spring Break (No Classes) *}
 \end{center}
 
-\subsection{Week of \weekten}
+\subsection{Week of March 23-27}
 
 \begin{tabsched}
 	\tabtools & See the \textit{Exploring the Many Sides of Diversity} WebQuest (\url{http://goo.gl/sUcRU1}) \\
@@ -654,7 +654,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \section{Unit 4: The Quest to Build a WebQuest}
 
-\subsection{Week of \weekeleven}
+\subsection{Week of March 30-April 3}
 
 \begin{center}
 	\textbf{* Special Week: Good Friday (No Classes on Friday, April 3) *}
@@ -674,7 +674,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabtweet
 \end{tabsched}
 
-\subsection{Week of \weektwelve}
+\subsection{Week of April 6-10}
 
 \begin{tabsched}
 	\tabpq & How do Performances of Understanding help the learning process? \\
@@ -689,7 +689,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabtweet
 \end{tabsched}
 
-\subsection{Week of \weekthirteen}
+\subsection{Week of April 13-17}
 
 \begin{tabsched}
 	\multicolumn{2}{c}{\textbf{Focus and Project Time}} \\
@@ -699,7 +699,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabperformance & Prezi Teaching for Understanding Map Intermediate Performance Due Monday April 13 \\
 \end{tabsched}
 
-\subsection{Week of \weekfourteen}
+\subsection{Week of April 20-24}
 
 \begin{tabsched}
 	\multicolumn{2}{c}{\textbf{Focus and Project Time}} \\
@@ -709,7 +709,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 
 \section{Unit 5: What Does Teaching with Technology Look Like?}
 
-\subsection{Week of \weekfifteen}
+\subsection{Week of April 27-May 1}
 
 \begin{tabsched}
 	\tabpq & What are some of the "pictures of teaching" presented in these articles? \\
@@ -727,6 +727,15 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 	\tabperformance & WebQuest Design Culminating Performance Due by Friday, May 1 \\
 \end{tabsched}
 
+\subsection{Week of May 4-8}
+
+\begin{tabsched}
+	\tabtools & thinglink (\url{http://www.thinglink.com/}) \\
+	\midrule
+	\tabcheck
+	\midrule
+	\tabperformance & \#teachingis Collage Culminating Performance Due by Tuesday, May 12 \\
+\end{tabsched}
 \end{fullwidth}
 
 \newpage
@@ -738,7 +747,7 @@ This unit will allow you to dig deep into how teachers use technology in the cla
 \part{Appendix}
 \begin{marginfigure}% 
 	\begin{center}
-  \includegraphics[width=1\linewidth]{frazz-inspiration.png}
+  \includegraphics[width=0.5\linewidth]{ap-pic.png}
 %  \caption{Charlie Brown reflecting on Learning Performances}
   \label{fig:ap-pic}
 	\end{center}
