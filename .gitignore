@@ -2,6 +2,7 @@
 *.aux
 *.log
 *.gz
+*.gz(busy)
 *.pdf
 *.out
 *.bak
