@@ -1,3 +1,5 @@
+%!TEX program = lualatex
+
 \documentclass{tufte-handout}
 \usepackage{hyperref}
 \usepackage{amsmath}
@@ -27,12 +29,6 @@
 \vspace{-0.5ex}%
 \rule{\textwidth}{0.3pt}
 ] % after-code
-
-%\newcommand{tabPQ}{\faQuestionSign\medspace\textit{Priming Questions}}
-
-%\newenvironment{tabPQ}
-%	{\faQuestionSign\medspace\textit{Priming Questions} & }
-%	{ \\}
 
 % Set up the images/graphics package
 \usepackage{graphicx}
@@ -72,7 +68,6 @@
 \newcommand{\docpkg}[1]{\texttt{#1}}% package name
 \newcommand{\doccls}[1]{\texttt{#1}}% document class name
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
-%\newenvironment{pointsworth}{\medskip\noindent\itshape}{\normalfont}
 
 \newcommand{\tabpq}{\faQuestionSign\medspace\textit{Priming Questions}}
 \newcommand{\tabread}{\faBook\medspace\textit{Readings}}
@@ -82,7 +77,7 @@
 \newcommand{\tabperformance}{\faTasks\medspace\textit{Performances}}
 \newenvironment{tabsched}
 	{\small
-	\begin{tabular}{p{1.5in}p{5in}}
+	\begin{tabular}{p{1.5in}p{4.5in}}
 	\toprule}
 	{\bottomrule
 	\end{tabular}
@@ -93,8 +88,6 @@
 		\fontseries{b} \faBullhorn \medspace Special Week: }
 		{\medspace \faBullhorn \fontseries{m}
 	\end{center}}
-
-
 
 \newcommand{\weekone}{August 17-21}
 \newcommand{\weektwo}{August 24-28}
@@ -124,13 +117,6 @@
 \maketitle% this prints the handout title, author, and date
 
 \marginnote{\textit{What is a syllabus?} The syllabus is your map for success in this course. It provides you with the course practices and expectations, a schedule for readings and assignments, and a breakdown of the points you can earn in the class. Put your syllabus in your binder and \emph{bring your syllabus with you to class everyday.}}
-
-%\begin{marginfigure}%
-%	\begin{center}
-%		\includegraphics[width=\linewidth]{syllabus.png}
-%		\label{fig:syllabus}
-%	\end{center}
-%\end{marginfigure}
 
 \begin{abstract}
 Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be exploring the different ways that technology can be used to support learning, understanding, and creativity in the classroom or in other types of learning environments. We will be paying special attention to the role that you play as facilitator and intentional designer of materials and of the environment to encourage learning, understanding, and creativity.\end{abstract}
@@ -175,8 +161,7 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
     \toprule
     Mondays & Wednesdays & Fridays \\
     \midrule
-    11:00am - 12:00pm & 11:00am - 12:00pm & 11:00am - 12:00pm \\
-    & 1:00 - 3:00pm & \\
+    10:00am - 12:00pm & 10:00am - 12:00pm & 10:00am - 12:00pm \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -200,9 +185,8 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
 
 \begin{marginfigure}%
 	\begin{center}
-  \includegraphics[width=0.75\linewidth]{teach-superpower.png}
-%  \caption{What's your superpower?}
-  \label{fig:teach-superpower}
+		\includegraphics[width=0.75\linewidth]{teach-superpower.png}
+		\label{fig:teach-superpower}
 	\end{center}
 \end{marginfigure}
 
@@ -249,9 +233,7 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
 
 \begin{marginfigure}%
 	\begin{center}
-  \includegraphics[width=1\linewidth]{frazz-mistakes.png}
-%  \caption{Charlie Brown reflecting on Learning Performances}
-  \label{fig:sc-pic}
+		\includegraphics[width=1\linewidth]{frazz-mistakes.png}
 	\end{center}
 \end{marginfigure}
 
@@ -469,8 +451,6 @@ As a way to engage in constructing digital learning environments and "get your f
 	\bottomrule
 \end{tabular}
 
-%\begin{fullwidth}
-
 \section{Unit 0: Getting Situated and Started}
 
 \subsection{Week of \weekone}
@@ -595,7 +575,6 @@ As a way to engage in constructing digital learning environments and "get your f
 \subsection{Week of \weekeight}
 
 \begin{specweek}\acmhe\end{specweek}
-\begin{specweek}\midsemester\end{specweek}
 
 \begin{tabsched}
 	\tabpq & What is a WebQuest? \\
@@ -611,6 +590,8 @@ As a way to engage in constructing digital learning environments and "get your f
 	\midrule
 	\tabperformance & UDL Book Major Performance Due by Friday, March 13 \\
 \end{tabsched}
+
+\begin{specweek}\midsemester\end{specweek}
 
 \subsection{Week of \weeknine}
 
@@ -705,8 +686,6 @@ As a way to engage in constructing digital learning environments and "get your f
 	\tabperformance & WebQuest Design Culminating Performance Due by Friday, May 1 \\
 \end{tabsched}
 
-%\end{fullwidth}
-
 \newpage
 
 \includepdf[angle=90,width=6in]{course-map.pdf}
@@ -714,13 +693,13 @@ As a way to engage in constructing digital learning environments and "get your f
 \newpage
 
 \part{Appendix}
+
 \begin{marginfigure}%
 	\begin{center}
-  \includegraphics[width=1\linewidth]{frazz-inspiration.png}
-%  \caption{Charlie Brown reflecting on Learning Performances}
-  \label{fig:ap-pic}
+		\includegraphics[width=1\linewidth]{frazz-inspiration.png}
 	\end{center}
 \end{marginfigure}
+
 \section{Fairmont State School of Education Conceptual Framework}
 The mission of the Fairmont State University School of Education (FSU SoE) is to prepare reflective and responsive educators who possess the knowledge, skills, and dispositions to help all students learn. The FSU SoE mission is integrated across the curriculum, field experiences, clinical practice, and assessments of candidates. The conceptual framework (CF) provides the structure and guiding principles that are necessary to accomplish this mission. The five West Virginia Professional Teaching Standards (WVPTS) and their respective functions undergird the knowledge, skills, and dispositions that candidates must possess in order to facilitate learning for all students. Diversity and technology are included in the CF representing themes that are integrated throughout the unit's programs. Demonstrated competencies in the standards/functions empower candidates to function as reflective and responsive educators. The CF is based on research about effective teaching and learning best practices that apply to teacher candidates at the initial level as well as accomplished teachers at the advanced level. The CF and the WVPTS also are central guiding elements of the FSU Professional Development School (PDS) Partnership that provides a critical structure and context for teacher education and educator professional development.
 
