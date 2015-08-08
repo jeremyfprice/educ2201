@@ -8,11 +8,11 @@
 \usepackage{todonotes}
 \usepackage{arydshln}
 \usepackage{fontawesome}
-\usepackage{fontspec}
 \usepackage{pdfpages}
 \usepackage{csquotes}
 \MakeOuterQuote{"}
-\setmainfont{Palatino Linotype}
+\usepackage{newpxtext,newpxmath}
+\useosf % old-style figures in text, not in math
 
 \titleformat
 {\part} % command
@@ -35,7 +35,7 @@
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{syllabus-img/}}
 
-\title{Teaching with Digital Media and Technology}
+\title{Teaching with Technology}
 \author{Dr. Jeremy Price}
 \date{Spring 2015}  % if the \date{} command is left out, the current date will be used
 
@@ -112,6 +112,10 @@
 \newcommand{\thanksgiving}{Thanksgiving Recess, November 23-27 (no class)}
 \newcommand{\finisemester}{Last Day of Class, Friday, December 4}
 
+% Set up the spacing using fontspec features
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+
 \begin{document}
 
 \maketitle% this prints the handout title, author, and date
@@ -132,11 +136,7 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
 	\bigskip
 
 	\Large
-	\enquote{Teaching is two-parts planning, one-part reflection, and extra heavy on the experimentation.}~-~Rebecca Alber
-
-	\bigskip
-
-	\enquote{It seems to me that that, finally, is what good teaching is all about\ldots~~Somehow or another, skill and knowledge are integrated into some kind of a human connection.}~-~Mike Rose
+	\enquote{Teaching is two-parts planning, one-part reflection, and extra heavy on the experimentation.} - Rebecca Alber
 
 	\normalsize
 \end{center}
@@ -279,7 +279,7 @@ We will be discussing a number of important ideas in class that you will need to
 
 \section{Stay Current by Keeping In Touch Outside of Class}
 
-\newthought{Communications between me and you outside of class will occur over \underline{email}.} \marginnote{If you wish to be notified by text every time I send an email to the class, please send a text to 81010. If you are in the 9:00am class, send the message \texttt{@edu2201-9}. If you are in the 12:00pm class, send the message \texttt{@edu2201-12}.}Please do not send me a message through Blackboard. Please make sure to check your Fairmont State email on a regular basis (at least 4-5 times per week). If you do not have a smart phone, a computer or internet access at home or in your dorm room, make it a regular practice to go to the library and check your email there.
+\newthought{Communications between me and you outside of class will occur over email.} \marginnote{If you wish to be notified by text every time I send an email to the class, please send a text to 81010. If you are in the 9:00am class, send the message \texttt{@edu2201-9}. If you are in the 12:00pm class, send the message \texttt{@edu2201-12}.}Please do not send me a message through Blackboard. Please make sure to check your Fairmont State email on a regular basis (at least 4-5 times per week). If you do not have a smart phone, a computer or internet access at home or in your dorm room, make it a regular practice to go to the library and check your email there.
 
 \begin{figure}%
   \includegraphics[width=\linewidth]{dilbert-email.png}
@@ -312,7 +312,7 @@ I spend a great deal of time and effort reviewing your work and providing feedba
 \newthought{Performances of Understanding are a way for you to demonstrate what you understand while also building your understanding.} These performances can be ongoing short check-ins or projects that can take anywhere from 2 to 5 weeks to complete.
 
 \section{Become a Scholar by Building Your Metacognitive Skills}
-\newthought{Metacognition means "thinking about thinking."} Being aware of your own thinking will help you learn more and help you succeed throughout your college career. It is also something that I hope you will help your own students develop when you are a teacher. Metacognition happens in part through (1)~setting goals, (2)~being intentional about your effort, and (3)~reflecting on your learning.
+\newthought{Metacognition means "thinking about thinking."} Being aware of your own thinking will help you learn more and help you succeed throughout your college career. It is also something that I hope you will help your own students develop when you are a teacher. Metacognition happens in part through (1) setting goals, (2) being intentional about your effort, and (3) reflecting on your learning.
 
 \subsection{Learning Tweets}
 You will be writing a "Learning Tweet" each week. You won't be using Twitter to write your tweets (you will be writing it directly to me using \texttt{TaskStream}), \marginnote{Your Learning Tweet should be a little longer than the typical tweet on Twitter: no less than three sentences.}but just like Twitter your Learning Tweet will be on the short side. You will be asked to post a Learning Tweet during some weeks directly on the readings, some weeks on class discussions, and some weeks on anything from class that surprised you. \emph{Make sure that your Learning Tweets have something to do with \textbf{this} class}.
@@ -328,24 +328,24 @@ The task of each Learning Tweet will be provided in TaskStream. The structure of
 
 The Learning Tweets allow you to make sense of your experiences and gives me a sense of what you are taking away from the class. I often readjust my teaching based on what students tell me through the Surprise Tweets. Keeping track of these "surprises" is a form of ongoing reflection and is an essential component of learning and teaching. We will be reading a short article on surprises in learning during the first week.
 
-\medskip\noindent\textit{$\mapsto$~Each Surprise Tweet is worth 10 points, for a total of 120 points.}
+\medskip\noindent\textit{$\mapsto$ Each Surprise Tweet is worth 10 points, for a total of 120 points.}
 
 \subsection{Metacognitive Self-Checks}
 
 You will complete a \texttt{Metacognitive Self-Check} at three points in the semester to allow you to reflect on your learning and participation practices for the class. You will choose three metacognitive practices that you wish to improve on over the course of the semester. You will then complete a rubric on these three practices,\marginnote{The Beginning-Developing-Succeeding rubric scale is based on educational psychologist Carol Dweck's idea of a \textit{growth mindset}. Adopting a growth mindset will help you recognize that you continuously learn.} rating yourself on a scale of Beginning-Developing-Succeeding. These Self-Checks will also allow me to see how you see yourself as a learner and a member of the class and allow me to provide you with added feedback, support and resources to help you succeed as a learner in the course and in college in general. Many students have found this to be a useful way to help them focus on improved participation in the class. You will not have to complete a Learning Tweet when a Metacognitive Self-Check is due.
 
-\medskip\noindent\textit{$\mapsto$~Each Self-Check is worth \textbf{20 points}, for a total of \textbf{60 points}.}
+\medskip\noindent\textit{$\mapsto$ Each Self-Check is worth \textbf{20 points}, for a total of \textbf{60 points}.}
 
 \subsection{Reflection Write-Ups}
 
 Reflecting on your work and your practice is an important part of being a teacher. I will help you develop these skills through structured reflections on your experiences throughout the semester. Each reflection will follow a slightly different structure, so make sure that you look closely at what is required of teh reflection. The basic parts of a reflection involve \texttt{framing} and \texttt{reframing}. \marginnote{\textit{Framing} refers to describing in detail the way that your project was completed. \textit{Reframing} refers to describing in detail how you\textemdash{}or a make-believe educator\textemdash{}might use your project in the future.}This method of reflection will allow you to look back on what you've done as well as project into the future as to how you might use what you have learned in your own teaching practices.
 
-\medskip\noindent\textit{$\mapsto$~Each Reflection is worth \textbf{10\% of Culminating Performance points}. The Reflection Write-Up is a required part of the project process and your submission will be returned to you if you do not also submit a Reflection Write-Up.}
+\medskip\noindent\textit{$\mapsto$ Each Reflection is worth \textbf{10\% of Culminating Performance points}. The Reflection Write-Up is a required part of the project process and your submission will be returned to you if you do not also submit a Reflection Write-Up.}
 
 \subsection{Passport Activities}
 Fairmont State University is looking to improve the learning experience of all students and help students build a successful academic career from admissions to graduation. Part of building this success is to become involved in campus life. As such, as a student in this course, you will \marginnote{Certain individuals who are already participating in the life of the University may qualify for an exemption.}required to participate in the Fairmont State Passport Program. You are required to create a plan of action for attending Passport Activities over the course of the semester and attend them. Of these activities, you will attend one of two "core" activities \marginnote{The two core activities are Dr. Sidwell's \textit{Personal Health \& Safety Plan} or Dr. Rohrbaugh's \textit{The Human Brain: Studying for University Classes}.}and write a reflection on your experience. You will also attend \textit{\textbf{four additional Passport Activities}}. The Passport Activities options will be provided for you early in the semester. If you have a Passport Activity you would like to organize, please let me know.
 
-\medskip\noindent\textit{$\mapsto$~Attendance at a Passport Core Activity and the written reflection is worth \textbf{60 points}. Attendance and short reflections at four additional Passport Elective Activities are worth 10 points each for a total of \textbf{40 points}.}
+\medskip\noindent\textit{$\mapsto$ Attendance at a Passport Core Activity and the written reflection is worth \textbf{60 points}. Attendance and short reflections at four additional Passport Elective Activities are worth 10 points each for a total of \textbf{40 points}.}
 
 \section{Intermediate and Culminating Performances of Understanding}
 
@@ -355,32 +355,32 @@ The \textit{Performances of Understanding}\footnote{Performances of Understandin
 
 The first week of class will be dedicated to helping everyone get into the flow of the course. We will be establishing expectations and practices for the semester. You will be completing an open-syllabus "quiz." This will allow you to get familiar with the syllabus, the expectations of the class and \texttt{TaskStream}.
 
-\medskip\noindent\textit{$\mapsto$~Your Syllabus Quiz is worth \textbf{10 points}.}
+\medskip\noindent\textit{$\mapsto$ Your Syllabus Quiz is worth \textbf{10 points}.}
 
 
 \subsection{Unit 1: Communicating the Role of Technology in Education}
 
 This first unit will introduce you to the idea of technology in education and challenge you to consider why using technology to support learning is important. This unit is also structured to help you succeed on the Praxis Core Academic Skills for Educators Exam. The essay you will write is similar to the argumentative essay you will write for the Core Exam. I will be helping you through the writing process that you can then bring into your own classrooms to support your own students when you are a teacher. In addition to writing the essay, I will be requiring you to accomplish two other steps: \textit{take a draft of your paper to the Writing Center} and \textit{meet with me to discuss the feedback on your paper}. The Writing Center is an excellent free on-campus resource for you. In our meeting, I will help you make good use of the feedback on your essay and it will help us get to know each other better.
 
-\medskip\noindent\textit{$\mapsto$~Your visit to the Writing Center is worth \textbf{40 points}. Your Argumentation Essay Culminating Performance is worth \textbf{90 points}.}
+\medskip\noindent\textit{$\mapsto$ Your visit to the Writing Center is worth \textbf{40 points}. Your Argumentation Essay Culminating Performance is worth \textbf{90 points}.}
 
 \subsection{Unit 2: Creating an Online Book for All Learners}
 
 As a way to engage in digital authoring and inclusive digital practices, you will write an online book for high school or college students about a time when you felt like you persisted, belonged, or saw things in a new way in order to succeed in a learning (although not necessarily classroom) environment. Helping students persist, develop a sense of belonging, and seeing ideas or problems in new ways has been shown to support academic achievement; this unit will help you explore your own experiences as well as help to prepare you to impress the value of the same practices on your future students.
 
-\medskip\noindent\textit{$\mapsto$~Your Outline is worth \textbf{20 points} and your Storyboard is worth \textbf{40 points}. The Online UDL Book is worth \textbf{150 points}.}
+\medskip\noindent\textit{$\mapsto$ Your Outline is worth \textbf{20 points} and your Storyboard is worth \textbf{40 points}. The Online UDL Book is worth \textbf{150 points}.}
 
 \subsection{Unit 3: Exploring the Many Sides of Diversity}
 
 Fully understanding\textemdash{}and supporting\textemdash{}diversity in the classroom will help you become a more successful teacher. This WebQuest will lead you through a number of activities to help you recognize, understand, and advocate for classroom diversity. You will be working as a team to create a public exhibit illustrating diversity through music. You will also become familiar with the structure of WebQuests.
 
-\medskip\noindent\textit{$\mapsto$~Your Diversity Poster Culminating Performance is worth \textbf{90 points}.}
+\medskip\noindent\textit{$\mapsto$ Your Diversity Poster Culminating Performance is worth \textbf{90 points}.}
 
 \subsection{Unit 4: The Quest to Build a WebQuest}
 
 As a way to engage in constructing digital learning environments and "get your feet wet" in using the Teaching for Understanding framework, you will construct a well-structured WebQuest for elementary, middle, or high school pupils on a particular topic of your choosing. As part of the process, you will create a "map" with Prezi using the Teaching for Understanding framework. You will also use additional media from other digital tools covered over the course of the semester in your WebQuest.
 
-\medskip\noindent\textit{$\mapsto$~Your TfU Map Intermediate Performance is worth \textbf{100 points}. Your WebQuest Culminating Performance is worth \textbf{180 points}.}
+\medskip\noindent\textit{$\mapsto$ Your TfU Map Intermediate Performance is worth \textbf{100 points}. Your WebQuest Culminating Performance is worth \textbf{180 points}.}
 
 \section{Course Point Breakdown}
 

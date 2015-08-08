@@ -1,0 +1,3 @@
+[submodule "syllabus-files"]
+	path = syllabus-files
+	url = https://github.com/jeremyfprice/courses-common.git
