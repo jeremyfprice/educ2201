@@ -59,22 +59,12 @@
 
 \usepackage{microtype}
 
-% These commands are used to pretty-print LaTeX commands
-\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
-\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
-\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
-\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
-\newcommand{\docenv}[1]{\textsf{#1}}% environment name
-\newcommand{\docpkg}[1]{\texttt{#1}}% package name
-\newcommand{\doccls}[1]{\texttt{#1}}% document class name
-\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
-
-\newcommand{\tabpq}{\faQuestionSign\medspace\textit{Priming Questions}}
+\newcommand{\tabpq}{\faQuestionCircle\medspace\textit{Priming Questions}}
 \newcommand{\tabread}{\faBook\medspace\textit{Readings}}
-\newcommand{\tabtools}{\faWrench\medspace\textit{Tools}}
-\newcommand{\tabtweet}{\faLightbulb\medspace\textit{Reflection Task} & Surprise Tweet Due Friday \\}
-\newcommand{\tabcheck}{\faLightbulb\medspace\textit{Reflection Task} & Metacognitive Check Due Friday (no Surprise Tweet) \\}
 \newcommand{\tabperformance}{\faTasks\medspace\textit{Performances}}
+\newcommand{\tabtools}{\faWrench\medspace\textit{Tools}}
+\newcommand{\tabtweet}{\faLightbulbO\medspace\textit{Reflection Task} & Learning Tweet Due Friday \\}
+\newcommand{\tabcheck}{\faLightbulbO\medspace\textit{Reflection Task} & Metacognitive Check Due Friday (no Learning Tweet) \\}
 \newenvironment{tabsched}
 	{\small
 	\begin{tabular}{p{1.5in}p{4.5in}}
@@ -142,41 +132,14 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
 \end{center}
 \end{fullwidth}
 
-\vfill
+\input{syllabus-files/professor-info}
 
-\subsection{Get to Know Your Professor}
-
-\noindent Dr. Jeremy Price
-
-\noindent Office: Education 315 | 304.333.3686
-
-\noindent \marginnote{\textit{Psst: Email is the best way to contact me.}}Email: \href{mailto:jeremy.price@fairmontstate.edu}{\nolinkurl{jeremy.price@fairmontstate.edu}}
-
-\noindent Visit me during my student drop-in hours:
-\marginnote{If you can't make my student drop-in hours, schedule an appointment with me at \url{https://jeremyprice.youcanbook.me/}}
-\begin{table}[ht]
-  \centering
-  %\fontfamily{ppl}\selectfont
-  \begin{tabular}{ccc}
-    \toprule
-    Mondays & Wednesdays & Fridays \\
-    \midrule
-    10:00am - 12:00pm & 10:00am - 12:00pm & 10:00am - 12:00pm \\
-    \bottomrule
-  \end{tabular}
-\end{table}
 \newpage
 
 \part{The EDUC2201 Contract}
 \begin{fullwidth}
 
-\textit{\textbf{Your first job} is to work at developing an academic relationship with me as your professor} just as you should work to develop a relationship with all of your professors. This job for you extends to \emph{all} of your classes; you will find that putting the effort into building an academic relationship with your professors pays off. Putting effort into building an academic relationship with your professor will make your other two jobs flow much more smoothly. I am (and all of your professors are) here to help you succeed. In order to help me support you, you need to help me know what you need. If you have a question, if you don't understand something, if you are having trouble getting to class, if you need a different explanation of something, \emph{talk to me}. Sometimes this means coming to my Student Drop-In Hours or scheduling an appointment with me outside of class. I work very hard to get to know my students in class, but I get to know them even better (and I can provide more targeted support) when my students talk with me outside of class.
-
-\textit{\textbf{Your second job} is to get to know and learn how to use all of the course materials.} I will provide you with information, models, and scaffolding in the syllabus and other companion documents. These companion documents include \texttt{Reference Sheets}, \texttt{Project Packages}, and \texttt{Model Assignments}. Success in this class involves organizing and understanding these sources of information; we will go over the syllabus in depth during the first class, and I am happy to meet with you to discuss the course and its requirements further.
-
-\textit{\textbf{Your third job} is to consider the long-term returns you will gain from putting effort into the work of this course.} When you are in college, your primary work responsibilities are to your coursework. You are in the Teacher Education Program and the effort you put into your coursework will pay off in terms of becoming a better prepared and more successful teacher. It is hard to find a balance between these long-term payoffs and short term needs (such as paying for rent, clothing, or entertainment and fun activities). You may also be more responsible for your time and attention than you ever have been before, so it is easy to slip into a pattern of missing classes, sleeping in, or spending late nights at parties. I am more than happy to help you find the right balance and to connect you with people and resources than can provide further support.
-
-\textit{\textbf{My jobs as your professor}} include designing an engaging, relevant, productive course, facilitating class activities that I believe will be effective in the learning process, assessing your work in a fair, timely manner, and creating a safe, supportive space in which everyone can be who she or he is and freely contribute to the class. I am here to support you as you succeed in this course and in the Teacher Education Program, but I can only do so with your help.
+\input{syllabus-files/undergraduate-course_contract}
 
 \end{fullwidth}
 \newpage
@@ -237,49 +200,25 @@ Welcome to EDUC2201, Teaching with Digital Media and Technology. We will be expl
 	\end{center}
 \end{marginfigure}
 
-\section{A Commitment to Universal Learning}
-\newthought{I am committed to the principle of universal learning.} This means that our classroom, our virtual spaces, our practices, and our interactions be as inclusive as possible. Mutual respect, civility, and the ability to listen and observe others carefully are crucial to universal learning.
+\input{syllabus-files/universal_learning}
 
-Any student with particular needs should contact the coordinator of Disability Services at the start of the semester. Services are available to any student, full or part-time, who has a need because of a [documented] disability.\marginnote{The coordinator of Disability Services can be reached at 304.367.4686 or 800.641.5678 Ext. 8.} It is the student's responsibility to register for services with the coordinator of students with disabilities and to provide any necessary documentation to verify a disability or the need for accommodations.  You and I can work out the details of any accommodations for this course.
+\input{syllabus-files/attendance}
 
-\section{Improve Your Chances for Success by Coming to Class Every Day}
-\newthought{Being present is important to success in this class.}\footnote{Research has found that just showing up to class is a better way to tell if you will do well in your college classes than anything else, including how you might have done in high school (Crede, Roch, and Kieszczynka, 2010).} This class is very collaborative and you will often be working in teams: your teammates depend on you. Attendance will be taken at every class, both as a way to help me learn your names and as a way to help you stay on track with attendance.
-
-I also understand that life happens and sometimes you might need to miss class. \footnote{\textit{Some acceptable reasons to miss class} include family emergencies, car troubles break down, icy or snowy roads, or illness. \textit{Some not acceptable reasons to miss class} include oversleeping, conflict with outside jobs, or the \enquote{I don't feel like going to class} excuse.} Keep an open line of communications with me about your absences from this class. \textbf{If you need to miss class, please notify me directly by email}. Although I would prefer to be notified ahead of time of your absence, if you have an excuse for your absence you have 24 hours after class to notify me. I will notice patterns of absences\textemdash{}unexcused \emph{and} excused\textemdash{}and I will call you on it because I want to do everything I can to help you succeed.
-
-\subsection{Building Trust: \enquote{Ooops!} Days}
-You might forget me to send me an email, so \textbf{each teacher candidate in EDUC2201 receives two "Ooops!" days.} Each unexcused absence beyond your two "Ooops!" days will result in 50 points taken off your final grade for the course.\marginnote{If you earned an B in the course but had two unexcused absences beyond your two "Ooops!" days, you will receive a C for your final grade.} \emph{If you need to be excused from class for an extended period of time} for a particular reason, you must speak to me directly outside of class\textemdash{}such as during my drop-in hours, or if you can't come at those times, schedule an appointment with me\textemdash{}so that we can work out a way for you to participate in the structure and activities of the course. I will be posting your attendance status on TaskStream each month.
-
-\newthought{The most important thing is to keep an open line of communications open with me:} I am here to help you succeed. I recognize that students are required to miss class for many different reasons. The important thing to remember is to keep an open line of communications with me so your grade is not adversely affected.
+\input{syllabus-files/ooops_days}
 
 \section{Be Better Prepared for Class with Active Reading}
 We will be reading a series of articles from educational journals and blogs each week. You are expected to complete readings prior to the start of class; if you do, you will be better prepared and be able to participate more fully in the discussions. We will be discussing these readings in class, drawing upon their ideas and concepts, and you will be asked to support your statements with evidence from the readings. I will also help you to make sense of these readings by helping you find the important and salient concepts. I recommend using the \textsf{SQ3R Method} for reading for this course (and all courses), which is illustrated and described in the \textsf{Course Tools and Practices} companion document.
 
-\section{Get in the Right Groove for Class}
-Every class will begin with a \textsf{cognitive warm-up}, a short activity designed to you make the transition into class and to help everyone get on the same page for a successful class. Many of the activities are designed to \textit{activate your prior knowledge} and \textit{prime you}\footnote{\textit{Prior knowledge} is the knowledge that you bring with you to your school work. \textit{Priming} is getting you in the right mindset to engage in the work at hand.} for the work to follow. Most students have said that this helps them prepare and participate in each class. So, \textit{arriving on time is important} and is a sign of respect to your classmates and to your professor. If you arrive during the cognitive warm-up, please wait outside in the hall until the activity is over. Use this time to take a deep breath and mentally prepare for class until the activity is over, when you are welcome to come in and find a seat.
+\input{syllabus-files/warm-up}
 
-\section{Participate Effectively to Get More Out of Class Time}
-\newthought{We learn best} when we converse with others about ideas and concepts, and participation is an important practice for success in university academic life in general. Ongoing participation is an important and required practice in this course. I understand that this may be out of some students' comfort level, but as you will be educators in the near future, I want to help you develop the skills and confidence to lead a discussion and take intellectual risks\footnote{Another way of thinking about \textit{intellectual risks} is contributing without the fear of being 100\% right. As Ms. Frizzle of the \textit{Magic School Bus} once said, "Take chances, make mistakes, get messy!"}. Teaching is also a highly collaborative career, meaning that you will be working closely with other teachers, school and district administrators, your students and parents just to do your job. The EDUC2201 classroom is a safe environment in which to practice participation skills.
-
-\emph{Quality participation does not mean that you talk the most, or even responding to my questions all the time.}\marginnote{Technology is a wonderful tool, but it is also a way to avoid being present. There is no texting allowed in class, and I will notice when you use the laptops and tablets for reasons other than the task at hand, such as checking Facebook, playing games, or shopping.} Some of the behaviors that show me that you are developing strong participatory and collaborative practices include:
-\begin{itemize}
-	\itemsep-0.5em
-	\item \textbf{Asking questions}
-	\item Responding to a \textbf{fellow student}
-	\item \textbf{Providing assistance} or helping another student
-	\item Making comments drawn from the \textbf{course readings}
-	\item Agreeing or disagreeing with something in the text or said in class by the instructor or another student in a way that \textbf{takes the conversation to a new level}
-\end{itemize}
-It is good to "answer questions" (and sometimes I will ask the class a question to better understand the current level of understanding) and it is often good to draw on your personal experience. But there's more to it than that; participation also involves bringing in what you have learned from the readings and applying what you learn from the in-class discussions to your Learning Performances.
+\input{syllabus-files/participation}
 
 \section{Take Knowledge from Class to Projects by Taking Notes}
 We will be discussing a number of important ideas in class that you will need to use in your assignments and projects. I will be asking you to write how you used the ideas we discussed in class to complete your projects, the more specific the better. There are a number of ways to take notes but the most important thing is that you find the method of note-taking that works for you. Remember that \emph{effective note-taking is more than writing down bullet points from PowerPoint slides}.
 
 \newthought{To help you develop the practice of note-taking,} I will be asking you to cite specific information from class and from the readings in your \textsf{Reflection Write-Ups} for your \textsf{Performances of Understandings}. Taking notes will help you to refer back to our discussions and use them in your \textsf{Reflection Write-Ups}. An important part of becoming a successful learner is moving ideas from one context to another, and I hope that this process will help you build some of the same practices with your own students in the future.
 
-\section{Stay Current by Keeping In Touch Outside of Class}
-
-\newthought{Communications between me and you outside of class will occur over email.} \marginnote{If you wish to be notified by text every time I send an email to the class, please send a text to 81010. If you are in the 9:00am class, send the message \texttt{@edu2201-9}. If you are in the 12:00pm class, send the message \texttt{@edu2201-12}.}Please do not send me a message through Blackboard. Please make sure to check your Fairmont State email on a regular basis (at least 4-5 times per week). If you do not have a smart phone, a computer or internet access at home or in your dorm room, make it a regular practice to go to the library and check your email there.
+\input{syllabus-files/email}
 
 \begin{figure}%
   \includegraphics[width=\linewidth]{dilbert-email.png}
@@ -287,12 +226,7 @@ We will be discussing a number of important ideas in class that you will need to
   \label{fig:dilbert-email}
 \end{figure}
 
-\section{Learn More by Submitting Assignments and Making Good Use of Feedback}
-\newthought{It is important to submit assignments on time} as a professional courtesy to yourself, your professor, and your classmates. All assignments are due in TaskStream before \textit{Pumpkin Hour}\footnote{\textit{Pumpkin Hour} is 11:59pm on the day the assignment is due.}. It is best not to wait until the Very Last Minute to submit assignments on \texttt{TaskStream}, as the submission process requires several steps.
-
-I completely understand that life happens and emergencies, illnesses, and other situations come up when you least want them to.\marginnote{The \textit{Things Happen Buffer} gives you a little wriggle-room when it comes to handling the things that come up in life. Make sure to send me an email within \emph{24 hours} after the due date if something comes up. The sooner you contact me the better.} If you are involved in an emergency, illness, or situation, please inform me via email as soon as possible, preferably before the due date, and we can discuss an extension. I also understand that things may happen on the date an assignment is due, so every student in EDUC2201 has a \textit{Things Happen Buffer}.
-
-%\marginnote{Yes, I will give extensions for good reasons. Try me.}
+\input{syllabus-files/assignments}
 
 \subsection{Keeping the Learning Going by Reviewing Your Feedback}
 I spend a great deal of time and effort reviewing your work and providing feedback that I think will be helpful for you. \marginnote{\textit{There is no shame in resubmissions.} Making adjustments to your work is part of the learning process. I also agree with educator Richard Curwin who says that education should really be about giving students second, third, fourth chances\ldots}There is also a possibility that you did not fulfill the requirements of the task; in this case, I will ask you to revise and resubmit your work through TaskStream before I assign you points. If you don't check TaskStream and look at your feedback, you won't know this.
@@ -312,7 +246,7 @@ I spend a great deal of time and effort reviewing your work and providing feedba
 \newthought{Performances of Understanding are a way for you to demonstrate what you understand while also building your understanding.} These performances can be ongoing short check-ins or projects that can take anywhere from 2 to 5 weeks to complete.
 
 \section{Become a Scholar by Building Your Metacognitive Skills}
-\newthought{Metacognition means "thinking about thinking."} Being aware of your own thinking will help you learn more and help you succeed throughout your college career. It is also something that I hope you will help your own students develop when you are a teacher. Metacognition happens in part through (1) setting goals, (2) being intentional about your effort, and (3) reflecting on your learning.
+\newthought{Metacognition means thinking about thinking.} Being aware of your own thinking will help you learn more and help you succeed throughout your college career. It is also something that I hope you will help your own students develop when you are a teacher. Metacognition happens in part through (1) setting goals, (2) being intentional about your effort, and (3) reflecting on your learning.
 
 \subsection{Learning Tweets}
 You will be writing a "Learning Tweet" each week. You won't be using Twitter to write your tweets (you will be writing it directly to me using \texttt{TaskStream}), \marginnote{Your Learning Tweet should be a little longer than the typical tweet on Twitter: no less than three sentences.}but just like Twitter your Learning Tweet will be on the short side. You will be asked to post a Learning Tweet during some weeks directly on the readings, some weeks on class discussions, and some weeks on anything from class that surprised you. \emph{Make sure that your Learning Tweets have something to do with \textbf{this} class}.
@@ -338,7 +272,7 @@ You will complete a \texttt{Metacognitive Self-Check} at three points in the sem
 
 \subsection{Reflection Write-Ups}
 
-Reflecting on your work and your practice is an important part of being a teacher. I will help you develop these skills through structured reflections on your experiences throughout the semester. Each reflection will follow a slightly different structure, so make sure that you look closely at what is required of teh reflection. The basic parts of a reflection involve \texttt{framing} and \texttt{reframing}. \marginnote{\textit{Framing} refers to describing in detail the way that your project was completed. \textit{Reframing} refers to describing in detail how you\textemdash{}or a make-believe educator\textemdash{}might use your project in the future.}This method of reflection will allow you to look back on what you've done as well as project into the future as to how you might use what you have learned in your own teaching practices.
+Reflecting on your work and your practice is an important part of being a teacher. I will help you develop these skills through structured reflections on your experiences throughout the semester. Each reflection will follow a slightly different structure, so make sure that you look closely at what is required of the reflection. The basic parts of a reflection involve \texttt{framing} and \texttt{reframing}. \marginnote{\textit{Framing} refers to describing in detail the way that your project was completed. \textit{Reframing} refers to describing in detail how you\textemdash{}or a make-believe educator\textemdash{}might use your project in the future.}This method of reflection will allow you to look back on what you've done as well as project into the future as to how you might use what you have learned in your own teaching practices.
 
 \medskip\noindent\textit{$\mapsto$ Each Reflection is worth \textbf{10\% of Culminating Performance points}. The Reflection Write-Up is a required part of the project process and your submission will be returned to you if you do not also submit a Reflection Write-Up.}
 
