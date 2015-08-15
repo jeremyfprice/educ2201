@@ -1,0 +1,430 @@
+%!TEX program = lualatex
+
+\documentclass{tufte-handout}
+%\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{framed}
+\usepackage{todonotes}
+\usepackage{arydshln}
+\usepackage{fontawesome}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\usepackage{newpxtext,newpxmath}
+\useosf % old-style figures in text, not in math
+
+\titleformat
+{\part} % command
+[display] % shape
+{\bfseries\Large\itshape} % format
+{Story No. \ \thechapter} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{1pt}
+    \vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-0.5ex}%
+\rule{\textwidth}{0.3pt}
+] % after-code
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{syllabus-img/}}
+
+\title{Teaching with Technology}
+\author{Dr. Jeremy Price}
+\date{Spring 2015}  % if the \date{} command is left out, the current date will be used
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+\usepackage{microtype}
+
+\newcommand{\tabpq}{\faQuestionCircle\medspace\textit{Priming Questions}}
+\newcommand{\tabread}{\faBook\medspace\textit{Readings}}
+\newcommand{\tabperformance}{\faTasks\medspace\textit{Performances}}
+\newcommand{\tabtools}{\faWrench\medspace\textit{Tools}}
+\newcommand{\tabtweet}{\faLightbulbO\medspace\textit{Reflection Task} & Learning Tweet Due Friday \\}
+\newcommand{\tabcheck}{\faLightbulbO\medspace\textit{Reflection Task} & Metacognitive Check Due Friday (no Learning Tweet) \\}
+
+\newenvironment{tabsched}
+	{\small
+	\begin{tabular}{p{1.5in}p{4.5in}}
+	\toprule}
+	{\bottomrule
+	\end{tabular}
+	\normalsize\\}
+
+\newenvironment{specweek}
+	{\begin{center}
+		\fontseries{b} \faBullhorn \medspace Special Week: }
+		{\medspace \faBullhorn \fontseries{m}
+	\end{center}}
+
+\newcommand{\weekone}{August 17-21}
+\newcommand{\weektwo}{August 24-28}
+\newcommand{\weekthree}{August 31-September 4}
+\newcommand{\weekfour}{September 7-11}
+\newcommand{\weekfive}{September 14-18}
+\newcommand{\weeksix}{September 21-25}
+\newcommand{\weekseven}{September 28-October 2}
+\newcommand{\weekeight}{October 5-9}
+\newcommand{\weeknine}{October 12-16}
+\newcommand{\weekten}{October 19-23}
+\newcommand{\weekeleven}{October 26-30}
+\newcommand{\weektwelve}{November 2-6}
+\newcommand{\weekthirteen}{November 9-13}
+\newcommand{\weekfourteen}{November 16-20}
+\newcommand{\weekfifteen}{November 30-December 4}
+\newcommand{\laborday}{Labor Day, Monday, September 7 (no class)}
+\newcommand{\roshhashanah}{Rosh Hashanah, Monday, September 14 (class via VoiceThread)}
+\newcommand{\yomkippur}{Yom Kippur, Wednesday, September 23 (class via VoiceThread)}
+\newcommand{\midsemester}{Mid-Semester Point}
+\newcommand{\acmhe}{Dr. Price at ACMHE Conference, Friday, October 9}
+\newcommand{\thanksgiving}{Thanksgiving Recess, November 23-27 (no class)}
+\newcommand{\finisemester}{Last Day of Class, Friday, December 4}
+
+\newcommand{\listmon}{\item[Monday] \hfill \\}
+\newcommand{\listwed}{\item[Wednesday] \hfill \\}
+\newcommand{\listfri}{\item[Friday] \hfill \\}
+\newenvironment{daywu}
+	{\textbf{\underline{Warm-Up:}} \hfill \\
+	\begin{itemize}}
+	{\end{itemize}}
+\newenvironment{dayact}
+	{\textbf{\underline{Activities:}} \hfill \\
+	\begin{itemize}}
+	{\end{itemize}}
+\newenvironment{dayref}
+	{\textbf{\underline{Reflection:}} \hfill \\
+	\begin{itemize}}
+	{\end{itemize}}
+\newenvironment{weeksched}
+	{\noindent
+	\begin{description}}
+	{\end{description}
+	\newpage}
+
+% Set up the spacing using fontspec features
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+
+\begin{document}
+\begin{fullwidth}
+
+\section{Unit 0: Getting Situated and Started}
+
+\subsection{Week of \weekone}
+
+\begin{tabsched}
+	\tabpq & What are some of the rules of the "program" for "doing school"? \\
+	& Should an effort be made to "deprogram" students from "doing school"? \\
+	& What does the author mean by "surprise," and why is surprise important for learning? \\
+	& Which components of a reflective classroom have you seen? \\
+	\midrule
+	\tabread & How Deprogramming Kids From How To Do School Could Improve Learning (\url{http://goo.gl/pnkkRM}) \\
+	& Surprise Journal: Notice the Unexpected (\url{http://goo.gl/h2ESqJ}) \\
+	& 8 Components of a Reflective Classroom (\url{http://bit.ly/1OXeCrp}) \\
+	\midrule
+	\tabtools & TaskStream (\url{https://www.taskstream.com/}) \\
+	& Microsoft Word 365 \\
+	\midrule
+	\tabtweet
+\end{tabsched}
+\begin{weeksched}
+
+\listmon
+\begin{daywu}
+	\item Name and one thing learned over the break
+\end{daywu}
+\begin{dayact}
+	\item SHORT intro, skip reading syllabus out loud
+	\item Do drawing activity: what does it look like to teach with technology? Short discussion
+	\item I will read poem out loud, ask students to contribute to Google Doc (anonymously) with initial reactions to each poem, discuss 10am: \url{http://goo.gl/FTNFcm}, 12pm: \url{http://goo.gl/L8mRBg}
+\end{dayact}
+\begin{dayref}
+	\item Use reflection sentence stem using Google Doc "What is something that surprised you in class today?" 10am: \url{http://goo.gl/VKflFk}, 12pm: \url{http://goo.gl/SZWHql}
+\end{dayref}
+
+\listwed
+\begin{daywu}
+	\item Name and something you are excited about for the coming semester
+\end{daywu}
+\begin{dayact}
+	\item Pause for questions about the course, requirements, or due dates
+	\item Watch video in three sections (\url{http://goo.gl/CqgQxW})
+	\begin{itemize}
+		\item What do you notice? What do you find interesting, what do you recognize, what good stuff is going on, what not so good stuff is going on?
+		\item Write responses into Word Doc (on Blackboard)
+		\item Short discussion
+		\begin{itemize}
+			\item Make connections to readings, especially Deprogramming article
+			\item What does "doing school" look like for you?
+		\end{itemize}
+	\end{itemize}
+\end{dayact}
+\begin{dayref}
+	\item Complete Passport Action Plans
+\end{dayref}
+
+\listfri
+\begin{daywu}
+	\item Name and an event that has had a big impact on your life as a student
+\end{daywu}
+\begin{dayact}
+	\item Present Reflection Framework
+	\item Watch video (\url{http://bit.ly/1N7pK7N})
+	\begin{itemize}
+		\item What do you notice? What are the teachers discussing in terms of what happened? What are the teachers discussing in terms of what to do next?
+		\item Running responses in TodaysMeet (on Blackboard)
+		\item Short discussion
+		\begin{itemize}
+			\item Make connections to readings, especially reflection
+			\item Where do you see the connections with the reflection framework?
+			\item Where do you see connections with the attributes of a reflective classroom? (esp., mutual respect, culture of questioning, diverse viewpoints)
+		\end{itemize}
+	\end{itemize}
+	\item Have students enroll in course on TaskStream
+	\item Review Surprise Journal, connect with readings
+\end{dayact}
+\begin{dayref}
+	\item Have students write first entry in Surprise Journal on TaskStream
+\end{dayref}
+\end{weeksched}
+
+\section{Unit 1: Communicating the Role of Technology in Education}
+
+\subsection{Week of \weektwo}
+
+\begin{tabsched}
+	\tabpq & According to Grant Wiggins, what are the differences between an \emph{argument} and a persuasive essay? \\
+	& According to John Spencer, how is it \emph{about} the technology? \\
+	\midrule
+	\tabread & Argument\textemdash{}the Core of the Common Core\textemdash{}and a clarifying example (\url{http://goo.gl/1nhpHs}) \\
+	& Actually, It Is About the Technology (\url{http://goo.gl/BE79FJ}) \\
+	\midrule
+	\tabtools & Padlet (\url{https://padlet.com/}) \\
+	& ScreenChomp (\url{http://www.techsmith.com/screenchomp.html}) \\
+	\midrule
+	\tabcheck
+	\midrule
+	\tabperformance & Syllabus "Quiz" Due Monday, August 24 \\
+\end{tabsched}
+
+\subsection{Week of \weekthree}
+
+\begin{tabsched}
+	\tabpq & According to Tom Whitby, what are the differences between \textit{then} and \textit{now}? \\
+	& What is the advice Bill Ferriter gives to help make students more engaged in learning with technology? \\
+	\midrule
+	\tabread & The Longer View: EdTech and 21st-Century Education (\url{http://goo.gl/iuJk59}) \\
+	& Are Kids Really Motivated by Technology? (\url{http://goo.gl/s3orWi}) \\
+	\midrule
+	\tabtweet
+\end{tabsched}
+
+\section{Unit 2: Creating an Online Book for All Learners}
+
+\subsection{Week of \weekfour}
+
+\begin{specweek}\laborday\end{specweek}
+
+\begin{tabsched}
+	\tabpq & What is the ultimate goal of Universal Design for Learning? \\
+	& What are the different \enquote{modes} according to UDL? \\
+	& What examples of these different modes have you seen in your own educational career? \\
+	\midrule
+	\tabread & What Is Universal Design for Learning? (\url{http://goo.gl/V9YHNw}) \\
+	& UDL At A Glance Video (\url{http://goo.gl/1xhgQh}) \\
+	& UDL Questions \& Answers (\url{http://goo.gl/watsXV}) \\
+	\midrule
+	\tabtweet
+	\midrule
+	\tabtools & Socrative (\url{http://b.socrative.com/login/student/}) \\
+	\midrule
+	\tabperformance & Feedback from Writing Center Completed by Friday, September 11 \\
+\end{tabsched}
+\newpage
+\subsection{Week of \weekfive}
+
+\begin{specweek}\roshhashanah\end{specweek}
+
+\begin{tabsched}
+	\tabpq & According to Carol Dweck, why are the two mindsets\textemdash{}fixed and growth\textemdash{}important? \\
+	& What are times that \emph{you} have taken on a fixed mindset? A growth mindset? \\
+	\midrule
+	\tabread & Mindsets: How to Motivate Students (And Yourself) (\url{http://goo.gl/N997iN}) \\
+	& The Power of Believing You Can Improve (\url{http://goo.gl/ADvfw4}) \\
+	\midrule
+	\tabtools & Storyboard That! (\url{https://www.storyboardthat.com/}) \\
+	& UDL BookBuilder (\url{http://bookbuilder.cast.org}) \\
+	\midrule
+	\tabtweet
+	\midrule
+	\tabperformance & Written Argument Due by Friday, September 18 \\
+\end{tabsched}
+
+\subsection{Week of \weeksix}
+
+\begin{specweek}\yomkippur\end{specweek}
+
+\begin{tabsched}
+	\tabpq & What are the four Reciprocal Teaching Strategies? \\
+	& What do the Reciprocal Teaching Strategies do for learners? \\
+	\midrule
+	\tabread & Reciprocal Teaching Strategies (\url{http://goo.gl/pIk8XA}) \\
+	\midrule
+	\tabtweet
+	\midrule
+	\tabperformance & UDL Book Outline Intermediate Performance Due by Monday, September 23 \\
+	& UDL Book Storyboard Intermediate Performance Due by Friday, September 25 \\
+
+\end{tabsched}
+
+\subsection{Week of \weekseven}
+
+\begin{tabsched}
+	\tabpq & According to the authors, what are the benefits of students becoming digital authors? \\
+	& According to the authors, why is it important for students to use technology in school? \\
+	& What does it mean to write purposefully? \\
+	\midrule
+	\tabread & Creating Digital Authors (\url{http://goo.gl/nTCziC}) \\
+	\midrule
+	\tabtweet
+\end{tabsched}
+
+\subsection{Week of \weekeight}
+
+\begin{specweek}\acmhe\end{specweek}
+
+\begin{tabsched}
+	\multicolumn{2}{c}{\faLaptop\medspace\textbf{Focus and Project Time}\medspace\faLaptop} \\
+	\midrule
+	\tabcheck
+\end{tabsched}
+
+\begin{specweek}\midsemester\end{specweek}
+
+\section{Unit 3: Exploring the Many Sides of Diversity}
+
+\subsection{Week of \weeknine}
+
+\begin{tabsched}
+	\tabpq & What is a WebQuest? \\
+	& What can a student learn from engaging in a WebQuest? \\
+	\midrule
+	\tabread & \textit{Exploring the Many Sides of Diversity} WebQuest (\url{http://bit.ly/webquest-diversity})\\
+	&  What is a WebQuest? (\url{http://goo.gl/M9HDsK}) \\
+	& What are the Essential Parts of a WebQuest? (\url{http://goo.gl/737kms}) \\
+	& What Kinds of Topics Lend Themselves to WebQuests? (\url{http://goo.gl/ZrD7r4}) \\
+	\midrule
+	\tabtools & See the \textit{Exploring the Many Sides of Diversity} WebQuest (\url{http://bit.ly/webquest-diversity}) \\
+	\midrule
+	\tabtweet
+	\midrule
+	\tabperformance & UDL Book Major Performance Due by Friday, October 16 \\
+\end{tabsched}
+
+\subsection{Week of \weekten}
+
+\begin{tabsched}
+	\tabtools & See the \textit{Exploring the Many Sides of Diversity} WebQuest (\url{http://goo.gl/sUcRU1}) \\
+	\midrule
+	\tabtweet
+	\midrule
+	\tabperformance & Diversity Poster PDF for Printing Due by Friday, October 23 \\
+	& Diversity Poster Culminating Performance Due by Friday, October 30 \\
+\end{tabsched}
+
+\section{Unit 4: The Quest to Build a WebQuest}
+
+\subsection{Week of \weekeleven}
+
+\begin{tabsched}
+	\tabpq & According to the authors, what does "understanding" mean? \\
+	& How is this definition similar to and different from your own definition of understanding? \\
+	& What do Generative Topics and Understanding Goals add to the teacher planning process? \\
+	\midrule
+	\tabread & Introducing Teaching for Understanding (\url{http://goo.gl/2F1CxV}) \\
+	& Generative Topics (\url{http://goo.gl/slJbOc}) \\
+	& What are Understanding Goals? (\url{http://goo.gl/qapL2r}) \\
+	\midrule
+	\tabtools & Prezi (\url{https://www.prezi.com/}) \\
+	\midrule
+	\tabtweet
+\end{tabsched}
+
+\subsection{Week of \weektwelve}
+
+\begin{tabsched}
+	\tabpq & How do Performances of Understanding help the learning process? \\
+	& What are the different ways a teacher can use scaffolding in a WebQuest? \\
+	\midrule
+	\tabread & What are Performances of Understanding (\url{http://goo.gl/Om1hT1}) \\
+	& Using the "Zone" to Help Reach Every Learner (\url{http://goo.gl/KCigdq}) \\
+	& 24 Assessments That Don't Suck (\url{http://goo.gl/Qzu8Hv}) \\
+	\midrule
+	\tabtools & Google Sites (\url{https://sites.google.com/}) \\
+	\midrule
+	\tabtweet
+\end{tabsched}
+
+\subsection{Week of \weekthirteen}
+
+\begin{tabsched}
+	\multicolumn{2}{c}{\faLaptop\medspace\textbf{Focus and Project Time}\medspace\faLaptop} \\
+	\midrule
+	\tabtweet
+	\midrule
+	\tabperformance & Prezi Teaching for Understanding Map Intermediate Performance Due Friday November 13 \\
+\end{tabsched}
+
+\subsection{Week of \weekfourteen}
+
+\begin{tabsched}
+	\multicolumn{2}{c}{\faLaptop\medspace\textbf{Focus and Project Time}\medspace\faLaptop} \\
+	\midrule
+	\tabtweet
+\end{tabsched}
+
+\begin{specweek}\thanksgiving\end{specweek}
+
+\subsection{Week of \weekfifteen}
+
+\begin{tabsched}
+	\tabpq & What are some of the "pictures of teaching" presented in these articles? \\
+	& What experiences have you had as a learner that look like these "pictures of teaching"? \\
+	\midrule
+	\tabread & Mastering the Teaching Game (\url{http://goo.gl/VqVZVx}) \\
+	& \#Teachingis Adapting (\url{http://goo.gl/lNUWTh}) \\
+	& The Importance of Saying "I'm Sorry" (\url{http://goo.gl/gNKcBa}) \\
+	\midrule
+	\tabcheck
+	\midrule
+	\tabperformance & WebQuest Design Culminating Performance Due by Friday, December 4 \\
+\end{tabsched}
+
+\begin{specweek}\finisemester\end{specweek}
+
+\end{fullwidth}
+\end{document}
