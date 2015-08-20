@@ -1,0 +1,189 @@
+%!TEX program = lualatex
+
+\documentclass[aspectratio=169]{beamer}
+%\usetheme{CambridgeUS}
+%\documentclass[12pt,t]{beamer}
+\beamertemplatenavigationsymbolsempty
+\usetheme{default}
+\usepackage{graphicx}
+\graphicspath{{presentation-reflection-img/}}
+\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif} % default family is serif
+\usepackage{fontspec}
+\setmainfont{Crimson Text}
+\setsansfont{Gill Sans MT}
+\setmonofont{Deja Vu Sans Mono}
+
+\usepackage{color}
+
+\usepackage{fontawesome}
+
+\usepackage{booktabs}
+\usepackage{array,multirow}
+
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shadows,calc}
+
+% code adapted from http://tex.stackexchange.com/a/11483/3954
+
+% some parameters for customization
+\def\shadowshift{3pt,-3pt}
+\def\shadowradius{6pt}
+\colorlet{innercolor}{black!60}
+\colorlet{outercolor}{gray!05}
+
+% this draws a shadow under a rectangle node
+\newcommand\drawshadow[1]{
+	\begin{pgfonlayer}{shadow}
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) circle (\shadowradius);
+		\shade[outercolor,inner color=innercolor,outer color=outercolor] ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,-\shadowradius/2)$) circle (\shadowradius);
+		\shade[top color=innercolor,bottom color=outercolor] ($(#1.south west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+		\shade[left color=innercolor,right color=outercolor] ($(#1.south east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+		\shade[bottom color=innercolor,top color=outercolor] ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$);
+		\shade[outercolor,right color=innercolor,left color=outercolor] ($(#1.south west)+(\shadowshift)+(-\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north west)+(\shadowshift)+(\shadowradius/2,-\shadowradius/2)$);
+		\filldraw ($(#1.south west)+(\shadowshift)+(\shadowradius/2,\shadowradius/2)$) rectangle ($(#1.north east)+(\shadowshift)-(\shadowradius/2,\shadowradius/2)$);
+	\end{pgfonlayer} }
+% create a shadow layer, so that we don't need to worry about overdrawing other things
+\pgfdeclarelayer{shadow}
+\pgfsetlayers{shadow,main}
+\newsavebox\mybox
+\newlength\mylen
+\newcommand\shadowimage[2][]{%
+	\setbox0=\hbox{\includegraphics[#1]{#2}}
+	\setlength\mylen{\wd0}
+	\ifnum\mylen<\ht0
+		\setlength\mylen{\ht0}
+	\fi
+	\divide \mylen by 120
+	\def\shadowshift{\mylen,-\mylen}
+	\def\shadowradius{\the\dimexpr\mylen+\mylen+\mylen\relax}
+	\begin{tikzpicture}
+		\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[#1]{#2}};
+		\drawshadow{image}
+	\end{tikzpicture}}
+
+\definecolor{bgcolor}{RGB}{255,255,243}
+\definecolor{FSUred}{RGB}{134,0,56}
+\definecolor{solarizedBG}{RGB}{54,66,192}
+\definecolor{fgblack}{RGB}{0,0,0} % I can't seem to figure out a way around this...
+
+\setbeamercolor{background canvas}{bg=bgcolor}
+\setbeamercolor{titlelike}{fg=fgblack}
+\setbeamercolor{subtitle}{fg=fgblack}
+\setbeamercolor{frametitle}{fg=FSUred}
+\setbeamercolor{subtitle}{fg=FSUred}
+\setbeamercolor*{enumerate item}{fg=black}
+
+\author{educ2201}
+\date{21 August 2015}
+\title[reflection]{\Huge\textsf{What's So Great About Reflection?}\normalsize}
+\subtitle{Introducing Reflection for Future Educators}
+
+\newcommand{\tBold}[1]{\textcolor{FSUred}{\textbf{#1}}}
+
+\begin{document}
+	\begin{frame}
+
+		\vfill
+
+		\maketitle
+
+		\vfill
+
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{\textsf{The Problem}}
+		\large "We know how kids learn; we know what classes should look like, and yet our classes look almost the opposite," Holman said. He says there's a particular deficit in math, where teachers and parents expect things to be taught the way they learned them. Not everyone has experienced good math instruction themselves, Holman said, so they can't even begin to conceptualize a new way of doing it. "Imagine explaining color to someone who has never seen it." \normalsize % Holman said. "You have to show them, you have to model it."
+		\vspace{2em}
+		\begin{flushright}
+			\tiny(Schwartz, 2004)
+		\end{flushright}
+	\end{frame}
+
+	\begin{frame}
+		\vspace{9em}
+		\Huge Teachers tend to teach they way they were taught as K-12 students. \normalsize
+		\vspace{1em}
+		\begin{flushright}
+			(Lortie, 2002)
+		\end{flushright}
+	\end{frame}
+
+	\begin{frame}%
+		\frametitle{\textsf{An Approach}}
+		\begin{columns}[c] % align columns
+			\begin{column}{.48\textwidth}
+				\huge Emphasize \tBold{REFLECTION} as a key practice in teacher education.
+			\end{column}%
+			\hfill%
+			\begin{column}{.48\textwidth}
+				\centering\noindent\shadowimage[width=0.5\textwidth]{me-reflection.jpg}
+			\end{column}%
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{\textsf{What do we think of when we think of reflection in learning and teaching?}}
+		\vfill
+		\centering\noindent\shadowimage[width=0.5\textwidth]{class-reflect.png}
+		\vfill
+	\end{frame}
+
+	\begin{frame}%
+		\begin{columns}[c] % align columns
+			\begin{column}{.48\textwidth}
+				\Large Reflection allows us to \tBold{look back} on and \tBold{make meaning} of what happened in the past as well as to help us to \tBold{plan} for the future.
+			\end{column}%
+			\hfill%
+			\begin{column}{.48\textwidth}
+				\centering\noindent\shadowimage[width=0.75\textwidth]{skeleton-reflect.png}
+			\end{column}%
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{\textsf{How Do We \textit{Do} Reflection?}}
+
+		\LARGE In a {\faFlash} flash {\faFlash}:
+		\vspace{2em}
+		\huge\begin{enumerate}
+			\item \textit{Identify} the important stuff
+			\item \textit{Analyze} the important stuff
+			\item \textit{Make a plan} for the future
+		\end{enumerate}\normalsize
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{\textsf{Let's Go To The Tape}}
+		\begin{columns}[c] % align columns
+			\begin{column}{.48\textwidth}
+				\LARGE Keep track of when the teachers:
+				\begin{enumerate}
+					\item \textit{Identify} important stuff
+					\item \textit{Analyze} important stuff
+					\item \textit{Make a plan} for the future
+				\end{enumerate} \normalsize
+			\end{column}%
+			\hfill%
+			\begin{column}{.48\textwidth}
+				\centering\noindent\shadowimage[width=0.85\textwidth]{video-shot.png}
+			\end{column}%
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{\textsf{On to the Passport Action Plans\ldots}}
+		\centering\noindent\shadowimage[width=0.85\textwidth]{passport.png}
+	\end{frame}
+
+\end{document}
