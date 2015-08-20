@@ -5,6 +5,9 @@
 *.gz(busy)
 *.out
 *.bak
+*.nav
+*.snm
+*.toc
 
 # Windows image file caches
 Thumbs.db
