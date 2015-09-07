@@ -8,6 +8,7 @@
 *.nav
 *.snm
 *.toc
+*feedback.txt
 
 # Windows image file caches
 Thumbs.db
