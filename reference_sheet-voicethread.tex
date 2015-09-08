@@ -1,0 +1,96 @@
+%!TEX program = lualatex
+
+\documentclass[12pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\setmainfont{Palatino Linotype}
+\setsansfont{Myriad Pro}
+\setmonofont{Andale Mono}
+\usepackage{microtype}
+
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{vt-img/}}
+
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{12pt}
+
+\definecolor{fsuMaroon}{RGB}{155,0,33}
+\definecolor{googleBlue}{RGB}{68,134,248}
+\definecolor{googleBlue2}{RGB}{53,122,232}
+\definecolor{sbGray}{HTML}{F6F6FF}
+\definecolor{googleRed}{HTML}{D0402F}
+
+\newcommand{\dueDate}[1]{\textbf{\textcolor{fsuMaroon}{#1}}}
+
+\newcommand{\stepNo}[1]{\noindent\hangindent2em\textit{Step~#1.}}
+
+\newcommand{\figImg}[2]{\begin{center}\frame{\includegraphics[width=#2\linewidth]{#1.png}}\end{center}}
+
+\newcommand{\buttonText}[1]{\fcolorbox{googleBlue2}{googleBlue}{\color{white}\textsf{\textbf{#1}}}}
+
+\newcommand{\buttonTextRed}[1]{\fcolorbox{googleRed}{googleRed}{\color{white}\textsf{\textbf{\uppercase{#1}}}}}
+
+\newcommand{\tabText}[1]{\fcolorbox{gray}{sbGray}{\color{black}\textsf{#1}}}
+
+\newcommand{\linkText}[1]{\textcolor{googleBlue}{\textsf{\textbf{#1}}}}
+
+\newcommand{\keyText}[1]{\textsf{\faKeyboard~#1}}
+
+\begin{document}
+
+\begin{center}
+\noindent\large\dueDate{\faBook}~~\textsf{\textit{Reference Sheet:} Getting Started with VoiceThread}\normalsize\\
+\rule{4in}{1pt}
+\end{center}
+
+This reference sheet will lead you through the process of getting started with VoiceThread. VoiceThread allows conversations to be conducted around a set of images, videos or slides. You are provided with a Basic VoiceThread account for the duration of your studies at Fairmont State University.
+
+\stepNo{1} Log in to Blackboard, such as through the \url{https://my.fairmontstate.edu/} portal and then navigate to this course. On the side panel, click on the \linkText{Course Content} link.
+\figImg{1}{0.35}
+
+\stepNo{2} The \linkText{VoiceThread} link is the top link. Go ahead and click on it.
+\figImg{2}{0.35}
+
+\newpage
+
+\stepNo{3} At this point, you will be taken to your "Dashboard" page. You are logged in so that you can comment on an existing VoiceThread under your real identity. Look for the VoiceThread that is assigned for the particular week and move your mouse over it. Click on the large triangular play button that appears when your mouse is over the VoiceThread.
+\figImg{3}{0.5}
+
+\stepNo{4} When you are viewing the VoiceThread, you may view existing comments by clicking on the avatar or image of the person who has already left a comment. You may also press the \linkText{Play} button, which will move through all existing comments in order. See the image below for short descriptions of each button on the screen.
+\figImg{4}{0.9}
+
+\newpage
+
+\stepNo{5} You are always welcome to leave a comment on any slide, but I will indicate to you which slides I expect you to specifically leave a comment. To leave a comment, click on the \buttonText{+} button just above the bottom of the screen.
+\figImg{5}{0.35}
+
+\stepNo{6} You will be offered a number of different options, such as adding a text comment, comment by phone, recorded audio comment, video comment, or uploading a file. Adding a comment by phone may cost you money, so this is not recommended. Most comments you are expected to contribute have nothing to do with separate files, so instructions for uploading a file are not included here.
+\figImg{6}{0.75}
+
+\newpage
+
+\stepNo{7} To add a text comment, click on the text comment option (it is represented by \linkText{ABC}). You will then be presented with a text pop-up box. Type in the box and then click on the \buttonText{Save} button when you are ready. Your comment then gets added to the end of the timeline.
+\figImg{7}{0.5}
+
+\stepNo{8} To add a recorded audio comment, click on the audio comment option (it is represented by a microphone \linkText{\faMicrophone}). The first time you click on this option, you may be asked to approve VoiceThread's use of your computer's microphone. Click the \buttonText{Allow} button.
+\figImg{8}{0.35}
+
+\newpage
+
+\stepNo{9} You will see a countdown screen, which is your cue as to when recording will start. Once it counts down, you can talk and your computer's microphone will record you. When you are ready, click on the \buttonTextRed{Stop Recording} button at the bottom of the screen. VoiceThread will play the recording back to you, and if you are satisfied, click on the \buttonText{Save} button and your voice comment will be added to the end of the timeline. If you are not satisfied, click the \buttonText{Cancel} button and you can re-record your comment.
+\figImg{9}{0.75}
+
+\stepNo{10} To add a recorded video comment, click on the video comment option (it is represented by a video camera \linkText{\faFacetimeVideo}). The first time you click on this option, you may be asked to approve VoiceThread's use of your computer's camera, much like recording an audio comment. Click the \buttonText{Allow} button.
+
+\stepNo{11} Just like with audio recording, you will see a countdown screen, which is your cue as to when recording will start. Once it counts down, you can talk and your computer's camera will record you. When you are ready, click on the \buttonTextRed{Stop Recording} button at the bottom of the screen. VoiceThread will play the video back to you, and if you are satisfied, click on the \buttonText{Save} button and your voice comment will be added to the end of the timeline. If you are not satisfied, click the \buttonText{Cancel} button and you can re-record your comment.
+
+\stepNo{12} And that's it!
+
+\end{document}
